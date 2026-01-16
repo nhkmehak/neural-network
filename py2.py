@@ -15,4 +15,4 @@ for neuronweights, neuronbias in zip(weights, biases):
 print(layeroutputs)
 
 output = np.dot(weights, inputs) + biases
-print(output)
+print(output)   
