@@ -25,7 +25,7 @@ class ActivationRELU     :
 #2 hidden layers (initialising a layer)
 class Layer:
     def __init__(self, ninputs, nneurons):
-          self.weights = 0.10 * np.random.rand(ninputs, nneurons)
+          self.weights = 0.10 * np.random.randn(ninputs, nneurons)
           self.biases = np.zeros((1, nneurons)) #2d(broadcasting in numpy)
     def forward(self, inputs):
           self.output =  np.dot(inputs,self.weights) + self.biases
